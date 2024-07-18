@@ -13,10 +13,21 @@ import javax.persistence.*;
 @Setter
 @Entity
 @Builder
-@NoArgsConstructor
+// @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "USERS")
 public class User {
+
+	User() {
+	}
+
+	public User(String name, String username, String password, String email, UserRole userRole) {
+		this.name = name;
+		this.username = username;
+		this.password = password;
+		this.email = email;
+		this.userRole = userRole;
+	}
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
