@@ -10,6 +10,9 @@ To run the app, do.
 mvn clean spring-boot:run
 ```
 
+### Database
+Using in memory database now instead of postgres, like in [here](https://github.com/spring-guides/tut-rest) .
+
 ### Curl requests
 
 ```
